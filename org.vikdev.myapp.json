@@ -1,0 +1,40 @@
+{
+    "app-id" : "org.vikdev.myapp",
+    "runtime" : "org.gnome.Sdk",
+    "runtime-version" : "40",
+    "sdk" : "org.gnome.Sdk",
+    "command" : "helloworld-",
+    "finish-args" : [
+        "--share=network",
+        "--share=ipc",
+        "--socket=fallback-x11",
+        "--socket=wayland"
+    ],
+    "cleanup" : [
+        "/include",
+        "/lib/pkgconfig",
+        "/man",
+        "/share/doc",
+        "/share/gtk-doc",
+        "/share/man",
+        "/share/pkgconfig",
+        "*.la",
+        "*.a"
+    ],
+    "modules" : [
+        {
+            "name" : "helloworld-",
+            "builddir" : true,
+            "buildsystem" : "meson",
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "file:///home/viktor/Projects/helloworld-"
+                }
+            ]
+        }
+    ],
+    "build-options" : {
+        "env" : {        }
+    }
+}
