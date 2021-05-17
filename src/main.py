@@ -17,7 +17,7 @@ import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
-class Calculator:
+class Kalkulacka:
     def __init__ (self):
         self.carry = 0
         self.ops = {
