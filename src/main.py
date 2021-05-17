@@ -38,7 +38,7 @@ class HeaderBarWindow (Gtk.Window):
 
     def __init__ (self):
         super().__init__()
-        self.calculator = Calculator()
+        self.calculator = Kalkulacka()
         self.clearCarry = False
         self.init_ui()
 
