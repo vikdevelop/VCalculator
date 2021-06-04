@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/org/vikdevelop/Calculator">
+  <gresource prefix="/org/vikdevelop/VCalculator">
     <file>window.ui</file>
   </gresource>
 </gresources>
