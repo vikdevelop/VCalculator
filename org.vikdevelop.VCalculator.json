@@ -1,5 +1,5 @@
 {
-    "app-id" : "org.vikdevelop.Calculator",
+    "app-id" : "org.vikdevelop.VCalculator",
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "40",
     "sdk" : "org.gnome.Sdk",
@@ -29,7 +29,7 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "file:///home/viktor/Projects/Calculator"
+                    "url" : "https://github.com/vikdevelop/VCalculator.git"
                 }
             ]
         }
