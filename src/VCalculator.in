@@ -1,6 +1,6 @@
 #!@PYTHON@
 
-# calculator.in
+# VCalculator.in
 #
 # Copyright 2021 viktor
 #
@@ -34,7 +34,7 @@ if __name__ == '__main__':
     import gi
 
     from gi.repository import Gio
-    resource = Gio.Resource.load(os.path.join(pkgdatadir, 'calculator.gresource'))
+    resource = Gio.Resource.load(os.path.join(pkgdatadir, 'VCalculator.gresource'))
     resource._register()
 
     from calculator import main
