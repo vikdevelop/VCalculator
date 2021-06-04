@@ -1,0 +1,7 @@
+data/org.vikdevelop.Calculator.desktop.in
+data/org.vikdevelop.Calculator.appdata.xml.in
+data/org.vikdevelop.Calculator.gschema.xml
+src/window.ui
+src/main.py
+src/window.py
+
