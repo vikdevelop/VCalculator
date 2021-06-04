@@ -1,8 +1,8 @@
 pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
-moduledir = join_paths(pkgdatadir, 'calculator')
+moduledir = join_paths(pkgdatadir, 'VCalculator')
 gnome = import('gnome')
 
-gnome.compile_resources('calculator',
+gnome.compile_resources('VCalculator',
   'calculator.gresource.xml',
   gresource_bundle: true,
   install: true,
