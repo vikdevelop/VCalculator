@@ -8,11 +8,7 @@ Pro instalaci je nutné mít Python 3.
 ```
 git clone https://github.com/vikdevelop/VCalculator.git
 ```
-2. Otevřete terminál a napište 
+2. Otevřete adresář a spusťte aplikaci
 ```
- cd ./VCalculator/src
+ cd ./VCalculator/src && python -m main.py
  ```
-4. Spusťte aplikaci pomocí 
-```
-python -m main.py
-```
