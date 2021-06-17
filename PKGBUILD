@@ -1,4 +1,3 @@
-# Maintainer: Bruno Pagani <archange@archlinux.org>
 
 _pkgname=VCalculator
 pkgname=vcalculator
