@@ -1,0 +1,28 @@
+# Maintainer: vikdevelop <super-vik1@protonmail.com>
+
+pkgname=vcalculator
+_pkgname=VCalculator
+pkgdesc="Simple Calculator in PyGTK"
+url="https://github.com/vikdevelop/$pkgname"
+pkgver=1.0.4
+pkgrel=1
+arch=('any')
+license=('GPL3')
+source=('https://github.com/vikdevelop/VCalculator/archive/refs/tags/1.0.4.tar.gz')
+depends=('python>=3' 'python-requests')
+sha256sums=('1818b748cb08965b1cc63af4ab3c5682db1c60bd18c719b6344ce5a1a9c2b27f')
+
+prepare()
+{
+  echo "#!/bin/bash\npython /usr/share/$pkgname/main.py \"\$@\"" > $pkgname
+}
+
+package()
+{
+  install -Dm755 $pkgname "$pkgdir/usr/bin/$pkgname"
+  cd $_pkgname-1.0.4
+  install -Dm755 $pkgname.desktop "$pkgdir/usr/share/applications/$pkgname.desktop"
+  install -Dm755 $srcdir/VCalculator-1.0.4/main.py "$pkgdir/usr/share/$pkgname/main.py"
+  install -Dm644 README.md "$pkgdir/usr/share/$pkgname/README.md"
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
