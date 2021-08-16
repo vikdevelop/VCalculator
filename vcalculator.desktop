@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=VCalculator
+Description=Simple Calculator in PyGTK
+Description[cs]=Jednoduchá kalkulačka v PyGTK
+Icon=deepin-calculator
+Exec=cd /usr/share/vcalculator && python -m main.py
+Category=Utilities
