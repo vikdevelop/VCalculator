@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=VCalculator
+Comment=Simple Calculator in PyGTK
+Icon=com.github.vikdevelop.VCalculator
+Exec=run-vcalculator.sh
+Categories=Utilities
