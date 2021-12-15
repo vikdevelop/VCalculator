@@ -1,28 +1,27 @@
-# Maintainer: vikdevelop <super-vik1@protonmail.com>
+# Maintainer: vikdevelop
 
 pkgname=vcalculator
-_pkgname=VCalculator
-pkgdesc="Simple Calculator in PyGTK"
-url="https://github.com/vikdevelop/$pkgname"
 pkgver=1.0.4
 pkgrel=1
+pkgdesc="Jednoduchá kalkulačka vytvořená v PyGTK."
 arch=('any')
+url="https://github.com/vikdevelop/VCalculator"
 license=('GPL3')
-source=('https://github.com/vikdevelop/VCalculator/archive/refs/tags/1.0.4.tar.gz')
-depends=('python>=3' 'python-requests')
-sha256sums=('1818b748cb08965b1cc63af4ab3c5682db1c60bd18c719b6344ce5a1a9c2b27f')
+depends=('python-gobject')
+source=("git+https://github.com/vikdevelop/VCalculator.git")
+sha256sums=('SKIP')
 
-prepare()
-{
-  echo "#!/bin/bash\npython /usr/share/$pkgname/main.py \"\$@\"" > $pkgname
+prepare() {
+	cd "VCalculator"
+	echo "python3 /usr/share/vcalculator/main.py" > vcalculator.sh
+	chmod +x vcalculator.sh
 }
 
-package()
-{
-  install -Dm755 $pkgname "$pkgdir/usr/bin/$pkgname"
-  cd $_pkgname-1.0.4
-  install -Dm755 $pkgname.desktop "$pkgdir/usr/share/applications/$pkgname.desktop"
-  install -Dm755 $srcdir/VCalculator-1.0.4/main.py "$pkgdir/usr/share/$pkgname/main.py"
-  install -Dm644 README.md "$pkgdir/usr/share/$pkgname/README.md"
-  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+package() {
+	cd "VCalculator"
+	install -D "vcalculator.sh" -t "$pkgdir/usr/bin"
+	install -D "vcalculator.desktop" -t "$pkgdir/usr/share/applications"
+	install -D "data/icons/vcalculator.png" -t "$pkgdir/usr/share/icons/hicolor/128x128/apps"
+	install -D "main.py" -t "$pkgdir/usr/share/vcalculator"
+	install -D "LICENSE" -t "$pkgdir/usr/share/licenses/vcalculator"
 }
