@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
     
-    <id>com.github.vikdevelop.Vcalculator</id>
+    <id>com.github.vikdevelop.VCalculator</id>
     <launchable type="desktop-id">com.github.vikdevelop.VCalculator.desktop</launchable>
     <name>VCalculator</name>
     <summary>Simple calculator.</summary>
