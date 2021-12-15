@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="vcalculator">
-	<schema id="org.vikdevelop.VCalculator" path="/org/vikdevelop/VCalculator/">
-	</schema>
-</schemalist>
