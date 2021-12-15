@@ -1,17 +1,3 @@
-# Copyright 2021 vik.dev
-#
-# Tento program je svobodný software. Můžete jej dále šířit a nebo upravovat
-# za podmínek licence GNU General Public License verze 3 (nebo novější verze) vydané
-# Free Software Foundation.
-#
-# Tento program je distribuován v naději, že bude užitečný,
-# ale BEZ JAKÉKOLI ZÁRUKY; bez dokonce předpokládané záruky pro
-# PRODEJNOST nebo PRO KOMERČNÍ ÚČEL. Viz
-# GNU General Public License pro více informací.
-#
-# Měli byste obdržet kopii GNU General Public License
-# spolu s tímto programem. Pokud ne, viz <https://www.gnu.org/licenses/>.
-
 #!/usr/bin/env python3
 import gi
 gi.require_version('Gtk', '3.0')
