@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+    
+    <id>com.github.vikdevelop.Vcalculator</id>
+    <launchable type="desktop-id">com.github.vikdevelop.VCalculator.desktop</launchable>
+    <name>VCalculator</name>
+    <summary>Simple calculator.</summary>
+    <metadata_license>CC0-1.0</metadata_license>
+    <project_license>GPL-3.0-or-later</project_license>
+    <developer_name>vikdevelop</developer_name>
+    
+    <description>
+      <p>This is a basic calculator, writed in PyGTK.</p>
+    </description>
+    
+    <url type="homepage">https://github.com/vikdevelop/VCalculator</url>
+    <url type="bugtracker">https://github.com/vikdevelop/VCalculator/issues</url>
+    
+    <screenshots>
+        <screenshot type="default">
+            <image>https://raw.githubusercontent.com/vikdevelop/VCalculator/main/img/kalkulacka.png</image>
+        </screenshot>
+    </screenshots>
+    
+    <content_rating type="oars-1.1"/>
+    
+    <categories>
+        <category>Utilities</category>
+    </categories>
+    
+    <releases>
+        <release version="1.0" date="2021-12-15">
+        </release>
+  </releases>
+    
+</component>
