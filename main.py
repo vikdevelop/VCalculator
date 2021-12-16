@@ -20,16 +20,16 @@ class Kalkulacka:
         self.nextOp = func
         return self.carry
 
-class HeaderBarWindow (Gtk.Window):
+class VCalculatorWindow (Gtk.Window):
 
     def __init__ (self):
         super().__init__()
-        self.calculator = Kalkulacka()
+        self.calculator = VCalculator()
         self.clearCarry = False
         self.init_ui()
 
     def init_ui (self):
-        self.set_title("Kalkulačka")
+        self.set_title("VCalculator")
         self.set_default_size(250, 250)
         self.set_border_width(16)
         self.set_resizable(False)
@@ -74,6 +74,6 @@ class HeaderBarWindow (Gtk.Window):
         else:
             entry.set_text(entry.get_text() + str(num))
 
-win = HeaderBarWindow()
+win = VCalculatorWindow()
 win.show_all()
 Gtk.main()
