@@ -29,6 +29,8 @@
     </categories>
     
     <releases>
+        <release version="1.0.8" date="2022-10-01">
+        </release>
         <release version="1.0" date="2021-12-15">
         </release>
   </releases>
